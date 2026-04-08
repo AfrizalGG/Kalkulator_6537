@@ -16,17 +16,14 @@ if (pilih == 1)
 {
     Console.WriteLine("Hasil: " + (var1 + var2));
 }
-
 else if (pilih == 2)
 {
     Console.WriteLine("Hasil: " + (var1 - var2));
 }
-
 else if (pilih == 3)
 {
     Console.WriteLine("Hasil: " + (var1 * var2));
 }
-
 else if (pilih == 4)
 {
     Console.WriteLine("Hasil: " + (var1 / var2));
