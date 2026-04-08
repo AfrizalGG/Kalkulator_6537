@@ -1,28 +1,33 @@
-﻿// See https://aka.ms/new-console-template for more information
-int var1 = 10;
-int var2 = 6;
+Console.WriteLine("KALKULATOR SEDERHANA");
+Console.WriteLine("1. Penjumlahan");
+Console.WriteLine("2. Pengurangan");
+Console.WriteLine("3. Perkalian");
+Console.WriteLine("4. Pembagian");
+Console.Write("Pilih menu (1-4): ");
 
-static int Penjumlahan(int var1, int var2)
+int pilih = int.Parse(Console.ReadLine()!);
+
+Console.Write("Masukan angka Pertama: ");
+int var1 = int.Parse(Console.ReadLine()!);
+Console.Write("Masukan angka Kedua: ");
+int var2 = int.Parse(Console.ReadLine()!);
+
+if (pilih == 1)
 {
-    return var1 + var2;
+    Console.WriteLine("Hasil: " + (var1 + var2));
 }
 
-static int Pengurangan(int var1, int var2)
+else if (pilih == 2)
 {
-    return var1 - var2;
+    Console.WriteLine("Hasil: " + (var1 - var2));
 }
 
-static int Perkalian(int var1, int var2)
+else if (pilih == 3)
 {
-    return var1 * var2;
+    Console.WriteLine("Hasil: " + (var1 * var2));
 }
 
-static int Pembagian(int var1, int var2)
+else if (pilih == 4)
 {
-    return var1 / var2;
+    Console.WriteLine("Hasil: " + (var1 / var2));
 }
-
-Console.WriteLine("Penjumlahan:" + var1 + " + " + var2 + " = " + Penjumlahan(var1, var2) + "");
-Console.WriteLine("Pengurangan:" + var1 + " - " + var2 + " = " + Pengurangan(var1, var2) + "");
-Console.WriteLine("perkalian:" + var1 + " * " + var2 + " = " + Perkalian(var1, var2) + "");
-Console.WriteLine("pembagian:" + var1 + " / " + var2 + " = " + Pembagian(var1, var2) + "");
